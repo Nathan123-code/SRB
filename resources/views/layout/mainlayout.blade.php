@@ -13,7 +13,11 @@
 <body class="d-flex flex-column min-vh-100 bg-light">
     @include('layout.navigation')
 
-    <main class="flex-grow-1">
+    @hasSection('GambarJudul')
+        @yield('GambarJudul')
+    @endif
+
+    <main class="flex-grow-1 padding-right--5 padding-left--5">       
         <div class="container">
             @yield('content')
         </div>
