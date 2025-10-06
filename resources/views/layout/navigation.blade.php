@@ -10,6 +10,9 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('kom2*') ? 'text-white bg-primary' : 'text-primary' }}" href="/kom2">Komisi 2</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('kom3*') ? 'text-white bg-primary' : 'text-primary' }}" href="/kom3">Komisi 3</a>
+            </li>
         </ul>
     </div>
 </nav>
